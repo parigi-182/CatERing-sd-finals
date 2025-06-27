@@ -2,10 +2,15 @@ package catering.persistence;
 
 // import com.sun.javafx.binding.StringFormatter;
 
-import java.sql.*;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
 
 public class PersistenceManager {
-    private static String url = "jdbc:mysql://localhost:3306/catering?serverTimezone=UTC";
+    private static String url = "jdbc:mysql://172.18.0.2:3306/catering?serverTimezone=UTC";
     private static String username = "root";
     private static String password = "4321test";
 
